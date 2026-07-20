@@ -1,0 +1,41 @@
+# Binary build ra từ go build
+/task-manager-api
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Thư mục output nếu build ra bin/
+/bin/
+/dist/
+
+# Test binary, build với go test -c
+*.test
+
+# Output của go tool cover
+*.out
+
+# Biến môi trường / secrets
+.env
+.env.*
+!.env.example
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# macOS
+.DS_Store
+
+# Log files
+*.log
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Docker override file cá nhân
+docker-compose.override.yml
